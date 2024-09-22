@@ -1,0 +1,29 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "HP Laptop",
+        "price": 100000,
+        "description": "HP Gaming Laptop",
+        "inStock": true,
+        "imagePath": "images/111.png"
+      },
+     {
+        "id": "2",
+        "name": "Dell Laptop",
+        "price": 100000,
+        "description": "Dell AI Laptop",
+        "inStock": true,
+        "imagePath": "images/222.png"
+      },
+  
+    {
+        "id": "3",
+        "name": "Acer Laptop",
+        "price": 20000,
+        "description": "Acer Student Laptop",
+        "inStock": true,
+        "imagePath": "images/333.png"
+      }
+    ]
+  }

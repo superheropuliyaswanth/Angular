@@ -1,0 +1,43 @@
+List of Products on sale
+
+<!-- <div *ngIf="products.length>0"> 
+
+
+    <ul *ngFor="let prod of products">
+        <li>{{prod.name}},{{prod.price}}</li>
+    </ul>
+
+
+</div>
+
+<div *ngIf="products.length==0"> 
+
+No products to display
+
+
+</div> -->
+
+<div class="product-list">
+  
+
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.imagePath" alt="{{ product.name }}" class="product-image" />
+      <div class="product-info">
+        <h2 class="product-name">{{ product.name }}</h2>
+        <p class="product-description">{{ product.description }}</p>
+        <p class="product-price">Price: {{ product.price}}</p>
+        <p class="product-stock" [ngClass]="product.inStock ? 'in-stock' : 'out-of-stock'">
+          {{ product.inStock ? 'In Stock' : 'Out of Stock' }}
+        </p>
+        <button class="product-buy-btn" [disabled]="!product.inStock">
+          Buy Now
+        </button>
+
+        <button (click)="deleteProduct(product.id)">
+          DELETE
+        </button>
+
+      </div>
+    </div>
+
+  </div>
